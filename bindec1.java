@@ -1,11 +1,14 @@
 package bindec1;
-
+import java.util.Scanner;
 public class bindec1 {
 
 	public static void main (String[] args) {  
-		long num = 10110101;
-        int decimal = convertBinaryToDecimal(num);
-        System.out.printf("%d em bin·rio = %d em decimal", num, decimal);
+		Scanner dados = new Scanner (System.in);
+		long num;
+		System.out.println("Qual o numero binario");
+		num = dados.nextInt();
+	     int decimal = convertBinaryToDecimal(num);
+        System.out.printf("%d em bin√°rio = %d em decimal", num, decimal);
     }
 
     public static int convertBinaryToDecimal(long num)
